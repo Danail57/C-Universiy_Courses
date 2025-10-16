@@ -1,4 +1,5 @@
 #include <iostream> 
+#include <iomanip>
 using namespace std;
 
 int main()
@@ -43,9 +44,8 @@ int main()
     average = double(sum) / count;
         
     }
+    cout << fixed << setprecision(2);
     cout << "The average of digits is: " << average << endl;
     cout << "The even count digits are: " << even_count << endl;
     cout << "The odd count digits are: " << odd_count << endl;
     return 0;
-    
-}
