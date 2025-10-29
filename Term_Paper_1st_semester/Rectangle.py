@@ -27,19 +27,19 @@ while True:
     except ValueError:
         print("Invalid input! Please enter numbers only.")
 
-# Създаваме графика
 fig, ax = plt.subplots()
 rect = patches.Rectangle((0, B), A, -B, linewidth=2, edgecolor='blue', facecolor='none')
 ax.add_patch(rect)
 
-# Чертаме точката
 plt.scatter(x, y, color=color, s=100, label='Point')
 
 plt.axhline(0, color='black', linewidth=0.8)
 plt.axvline(0, color='black', linewidth=0.8)
 plt.grid(True)
+
 plt.legend()
 plt.title("Point relative to rectangle")
+
 plt.xlabel("X")
 plt.ylabel("Y")
 
