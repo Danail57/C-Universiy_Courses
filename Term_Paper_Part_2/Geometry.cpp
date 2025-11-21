@@ -30,8 +30,7 @@ int main()
             cout << "Number out of range! Enter a number between 1 and 100.\n";
             continue;
         }
-
-        break; // валидно число
+        break; 
     }
 
     double x_center[100], y_center[100], radius[100];
@@ -70,7 +69,6 @@ int main()
                 cout << "Invalid radius! Must be greater than 0.\n";
                 continue;
             }
-
             break; 
         }
     }
@@ -94,7 +92,6 @@ int main()
             cout << "Number out of range! Enter 1-20.\n";
             continue;
         }
-
         break; 
     }
 
@@ -124,7 +121,6 @@ int main()
                 cout << "Invalid input!\n";
                 continue;
             }
-
             break; 
         }
     }
