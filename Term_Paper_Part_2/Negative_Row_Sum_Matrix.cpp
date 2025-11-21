@@ -11,6 +11,7 @@ int main()
     //  Entering the count for rows
     cout << "Enter number of rows (1 - 100): ";
     cin >> n_rows;
+   
     while (cin.fail() || n_rows < 1 || n_rows > 100)
     {
         cin.clear();
@@ -22,6 +23,7 @@ int main()
     // Entering the count for cols
     cout << "Enter number of columns (1 - 100): ";
     cin >> m_cols;
+    
     while (cin.fail() || m_cols < 1 || m_cols > 100)
     {
         cin.clear();
