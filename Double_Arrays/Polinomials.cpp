@@ -29,7 +29,7 @@ int main()
 		y = y * x + coeff[i];
 		cout << y;
 	}
-	cout << "\nResullt y = " << y << endl;
+	cout << "\nResult y = " << y << endl;
 	delete[] coeff;
 	return 0;
 }
