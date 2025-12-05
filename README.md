@@ -7,6 +7,7 @@ Each week represents the exercises and lessons covered in the university. All ex
 
 https://www.tutorialspoint.com/c_standard_library/index.htm
 
+https://cplusplus.com/reference/
 
 https://www.learncpp.com/#google_vignette
 
