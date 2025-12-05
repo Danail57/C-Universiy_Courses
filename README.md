@@ -5,6 +5,8 @@ An introduction to the principles of programming with C++, focusing on core lang
 ## Meaning of the folders named weeks, e.g. Week_1; Week_2..... 
 Each week represents the exercises and lessons covered in the university. All exercises are brought together in the folder called Basics.
 
+https://www.tutorialspoint.com/c_standard_library/index.htm
+
 
 https://www.learncpp.com/#google_vignette
 
