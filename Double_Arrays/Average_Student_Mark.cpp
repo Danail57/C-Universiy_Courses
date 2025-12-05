@@ -42,5 +42,7 @@ int main()
 
 	cout << "Rate success of students:\n";
 	for (int i = 0; i < m_students; i++)
-	cout <<'\t' << i + 1 << " student:" << average_mark[i] << endl;
+		{
+				cout <<'\t' << i + 1 << " student:" << average_mark[i] << endl;
+		}
 }
