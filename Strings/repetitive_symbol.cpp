@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	char symbls[] = { '!', '?', ',', '.', ':', ';' };
+	char symbols[] = { '!', '?', ',', '.', ':', ';' };
 	int counts[6] = { 0, 0, 0, 0, 0, 0 };
 
 	string text;
@@ -24,5 +24,9 @@ int main()
 			}
 		}
 	}
-
+	cout << "symbol counts: " << endl;
+	for (int i = 0; i < 6; i++)
+	{
+		cout << symbols[i] << " : " << counts[i] << endl;
+	}
 }
