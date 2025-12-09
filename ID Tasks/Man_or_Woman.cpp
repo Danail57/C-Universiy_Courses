@@ -6,38 +6,46 @@ E0, E1,..., En-1  Да се състави програма, която
 
 
 #include <iostream>
-#include <string>
-
 using namespace std;
 
-int main()
+int main() 
 {
-	int n;
-	cout << "Enter how many IDs you want to write: ";
-	cin >> n;
+    int n;
+    cout << "Enter number of IDs: ";
+    cin >> n;
 
-	char ID[100][11];
-	int a[100];
+    char ID[100][11]; 
+    int gender[100];  
 
-	for (int i = 0; i < n; i++)
-	{
-		cout << "Enter ID[" << i + 1 << "]: ";
-		cin >> ID[i];
-	}
+    for (int i = 0; i < n; i++) 
+    {
+        cout << "Enter ID[" << i + 1 << "]: ";
+        cin >> ID[i];
+    }
 
-	for (int i = 0; i < n; i++)
-	{
-		int gender_digit = ID[i][8] - '0';
-		if (gender_digit % 2 == 0)
-			a[i] = 1; // woman
-		else
-			a[i] = 0; // man
-	}
+    // Определяне на пола
+    for (int i = 0; i < n; i++) 
+    {
+        char last4[5];
+        for (int j = 0; j < 4; j++)
+        {
+            last4[j] = ID[i][6 + j]; 
+        }
+        last4[4] = '\0';
 
-	for (int i = 0; i < n; i++)
-	{
-		cout << "ID[" << i + 1 << "] is " << (a[i] == 0 ? "male" : "female") << endl;
-	}
-	return 0;
+        int check_digit = last4[1] - '0'; 
+        if (check_digit % 2 == 0)
+            gender[i] = 1; 
+        else
+            gender[i] = 0; 
+    }
+
+    for (int i = 0; i < n; i++) 
+    {
+        cout << "ID[" << i + 1 << "] is " 
+             << (gender[i] == 0 ? "male" : "female") << endl;
+    }
+
+    return 0;
 }
 
