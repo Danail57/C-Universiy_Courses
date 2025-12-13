@@ -7,7 +7,7 @@ int main ()
 {
     cout << "Hello world!" << endl;
     cout << "============" << endl;
-    cout << "In Python to print Hello World you need just a sinle line!" << endl;
+    cout << "In Python to print Hello World you need just a single line!" << endl;
     cout << "print (\"Hello World\") is the first and foremost basic need of knowledge!" << endl;
     return 0;
 }
