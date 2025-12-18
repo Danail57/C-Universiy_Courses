@@ -14,10 +14,17 @@ int main()
 	int max_count = 0; // encountering of current digit
 	int temp = 0;
 
-	cout << "Enter a positive number: ";
+	cout << "Enter a non-negative number: ";
 	cin >> x;
+	if (x == 0)
+	{
+		cout << "Max digit is: 0";
+		return 0;
+	}
+
 	for (int digit = 0; digit < 10; digit++)
 	{
+		count = 0;
 		temp = x;
 		while (temp != 0)
 		{
