@@ -20,7 +20,7 @@ int main()
 	Student students[1000];
 
 	int n;
-	cout << "Enter number of stdudents: ";
+	cout << "Enter number of students: ";
 	cin >> n;
 
 	for (int i = 0; i < n; i++)
