@@ -1,0 +1,4 @@
+text = input("Enter a string: ")
+words = text.split()
+longest_word = max(words, key=len)
+print(longest_word)
