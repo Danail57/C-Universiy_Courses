@@ -65,7 +65,7 @@ int main()
 			best_circle = i;
 		}
 	}
-	cout << "Curcle with the most points: #" << best_circle + 1 << endl;
+	cout << "Circle with the most points: #" << best_circle + 1 << endl;
 	cout << "Points inside: " << max_points << endl;
 	return 0;
 }
