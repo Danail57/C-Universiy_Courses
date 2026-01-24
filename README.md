@@ -2,6 +2,8 @@
 In this repository are shown the principles of programming with C++, focusing on core language syntax, memory management, object-oriented programming, and the use of the Standard Template Library (STL). The course also covers problem-solving techniques, data structures, and efficient code design.
 In separare folders there are a lot of topics related to C++ programming.
 
+Microsoft
+https://learn.microsoft.com/en-us/windows/win32/api/lmshare/nf-lmshare-netsharesetinfo?redirectedfrom=MSDN&devlangs=cpp&f1url=%3FappId%3DDev17IDEF1%26l%3DEN-US%26k%3Dk(1)%3Bk(DevLang-C%2B%2B)%3Bk(TargetOS-Windows)%26rd%3Dtrue
 
 ## Meaning of the folders named weeks, e.g. Week_1; Week_2..... 
 Each week represents the exercises and lessons covered in the university. All exercises are brought together in the folder called Basics.
