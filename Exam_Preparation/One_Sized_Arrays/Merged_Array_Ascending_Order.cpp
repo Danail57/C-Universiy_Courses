@@ -11,14 +11,18 @@ int main()
 {
     int arrOne[50], arrTwo[50], arrMerge[100];
     int sizeOne, sizeTwo, sizeMerge, i, j, temp;
+    
     cout << "Enter the Size for First Array: ";
     cin >> sizeOne;
+    
     cout << "Enter the Size for Second Array: ";
     cin >> sizeTwo;
+    
     cout << "\nEnter " << sizeOne << " Elements for First Array: ";
     for (i = 0; i < sizeOne; i++)
         cin >> arrOne[i];
     cout << "\nEnter " << sizeTwo << " Elements for Second Array: ";
+    
     for (i = 0; i < sizeTwo; i++)
         cin >> arrTwo[i];
     
