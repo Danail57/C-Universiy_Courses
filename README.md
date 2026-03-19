@@ -3,6 +3,9 @@ In this repository are shown the principles of programming with C++, focusing on
 In separare folders there are a lot of topics related to C++ programming.
 
 
+
+https://www.daniweb.com/  - Technology and Programming
+
 https://cpp.weareone.bg/Zadachi_ArraysAndFunctions.html С++ задачи
 
 Microsoft
