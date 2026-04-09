@@ -4,6 +4,7 @@
 #include <ctime>
 using namespace std;
 
+# за довършване
 
 class Date {
 public:
