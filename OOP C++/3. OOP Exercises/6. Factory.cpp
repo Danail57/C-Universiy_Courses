@@ -14,7 +14,6 @@
 раждане на жените с дневно заплащане под 20 лв */
 
 #include <iostream>
-#include <ctime>
 #include <string>
 #include <vector>
 using namespace std;
