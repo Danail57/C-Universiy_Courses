@@ -104,7 +104,7 @@ void women_with_salary_up_300_born_in_a_month(const vector <Factory> workers)
 		cout << name << endl;
 
 	if (result.empty())
-		cout << "No matches!" << endl;
+		cout << "No matches" << endl;
 }
 
 int main()
