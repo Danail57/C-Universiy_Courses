@@ -9,3 +9,5 @@
 4. https://learn.microsoft.com/en-us/cpp/cpp/arrays-cpp?view=msvc-170
 
 5. https://cppreference.com/book/arrays.html
+
+6. https://docs.arduino.cc/language-reference/en/variables/data-types/array/
