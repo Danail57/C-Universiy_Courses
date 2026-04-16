@@ -1,8 +1,8 @@
 **Arrays C++**
 
-https://cplusplus.com/doc/tutorial/arrays/
+1. https://cplusplus.com/doc/tutorial/arrays/
 
-https://cppreference.com/book/arrays.html
+2. https://cppreference.com/book/arrays.html
 
 https://cplusplus.com/reference/array/array/
 
