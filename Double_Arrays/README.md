@@ -6,6 +6,6 @@
 
 3. https://cplusplus.com/reference/array/array/
 
-https://learn.microsoft.com/en-us/cpp/cpp/arrays-cpp?view=msvc-170
+4. https://learn.microsoft.com/en-us/cpp/cpp/arrays-cpp?view=msvc-170
 
 https://cppreference.com/book/arrays.html
