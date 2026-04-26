@@ -1,7 +1,7 @@
 // Курсова работа
 
 /*9. До участие в национална олимпиада по програмиране се допускат студенти
-(име, ЕГН, университет, факултет, специалност, събрани точки) и 
+(име, ЕГН, университет, факултет, специалност, събрани точки) и
 ученици (име, ЕГН, училище, клас, събрани точки). Данните за всички участници
 се съхраняват в масив, направете меню, което да изпълнява следните операции
 - добавя данните на пореден участник
@@ -84,7 +84,6 @@ void Students::display() const
 	cout << "Points: " << points << endl;
 }
 
-
 // Functions - functionality
 void display_all_data_for_university_students(vector<UniversityStudents> university_students)
 {
@@ -121,7 +120,7 @@ void show_women_university_students_above_50_points(vector <UniversityStudents> 
 }
 
 
-void show_women_university_from_an_university(vector <UniversityStudents> women_university_students, string university)
+void show_women_university_from_an_university(vector <UniversityStudents> women_university_students)
 {
 	string university;
 	cin.ignore();
@@ -135,6 +134,24 @@ void show_women_university_from_an_university(vector <UniversityStudents> women_
 	}
 }
 
+vector <Students> get_students_from_town(vector <Students> all_students)
+{
+	string town;
+	cin.ignore();
+	cout << "Write the city you are from: "; getline(cin, town);
+
+	vector <Students> result;
+	for (auto student : all_students)
+	{
+		if (student.town == town)
+		{
+			result.push_back(student);
+		}
+	}
+	return result;
+}
+
+
 int main()
 {
 	vector <UniversityStudents> university_students;
@@ -146,7 +163,7 @@ int main()
 		cout << "2. Add school student\n";
 		cout << "3. Display university student data\n";
 		cout << "4. Display school student data\n";
-		cout << "5. University students with points > 50\n";
+		cout << "5. University women students with points > 50\n";
 		cout << "6. School students from a city\n";
 		cout << "0. Exit\n";
 
@@ -172,15 +189,24 @@ int main()
 			display_all_data_for_all_school_students(students);
 		}
 		else if (choice == 5)
-		{			
-			show_women_university_students_above_50_points(university_students);
+		{
 			show_women_university_from_an_university(university_students);
 		}
 		else if (choice == 6)
 		{
-
+			vector <Students> result = get_students_from_town(students);
+			cout << "\nStudents from this town:\n";
+			if (result.empty())
+			{
+				cout << "No students from this town.\n";
+			}
+			else 
+			{
+				for (auto student : result)
+				{
+					student.display();
+				}
+			}
 		}
 	} while (choice != 0);
 }
-
-// za dovurshvane
