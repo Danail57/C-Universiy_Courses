@@ -1,20 +1,20 @@
 #pragma once
-#include <iostream>
-#include <ctime>
+#include <string>
 using namespace std;
-
-class Date {
+class CDate {
+private:
+	unsigned short int day, month, year;
 public:
-	int day, month, year;
-	void get_data();
+	CDate();
+	CDate(short int, short int, short int);
+	void enterDate();
 	void display();
-
-    bool operator<(const Date& other) const;
-    bool operator>(const Date& other) const;
-    bool operator<=(const Date& other) const;
-    bool operator>=(const Date& other) const;
-    bool operator!=(const Date& other) const;
-
-    Date operator+(int days) const;
+	string toString();
+	void setToCurrentDate();
+	short int getDay();
+	short int getMonth();
+	short int getYear();
+	bool operator==(CDate d);
+	bool operator>(CDate d);
 };
-Date current_date();
+

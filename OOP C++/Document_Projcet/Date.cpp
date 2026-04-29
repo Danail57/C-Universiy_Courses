@@ -1,64 +1,57 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "Date.h"
-Date current_date()
-
-{
-	time_t t = time(0);
-	tm* now = localtime(&t);
-	Date d;
-	d.day = now->tm_mday;
-	d.month = now->tm_mon + 1;
-	d.year = now->tm_year + 1900;
-	return d;
+#include <ctime>
+#include <iostream>
+#include <string>
+#include <sstream>
+using namespace std;
+CDate::CDate(){
+	day = 1; month = 1; year = 1900;
 }
 
-void Date::get_data()
-{
-	cout << "Day: "; cin >> day;
-	cout << "Month: "; cin >> month;
-	cout << "Year: "; cin >> year;
+CDate::CDate(short int d, short int m, short int y){
+	day = d; month = m; year = y;
 }
 
-void Date::display() 
-{
-	cout << year << "-";
-
-	if (month < 10) cout << "0";
-	cout << month << "-";
-
-	if (day < 10) cout << "0";
-	cout << day << endl;
+void CDate::enterDate(){
+    cout<< "day: "; cin >>day;
+	cout<< "month: "; cin >>month;
+	cout<< "year: "; cin >>year;
 }
 
-bool Date::operator<(const Date& other) const
+void CDate::display(){
+    cout<< day << "." << month << "." << year << endl;
+}
+string CDate::toString()
 {
-	if (year != other.year) return year < other.year;
-	if (month != other.month) return month < other.month;
-	return day < other.day;
+    stringstream ss;
+
+    ss << day << "." 
+       << month << "." 
+       << year;
+
+    return ss.str();
 }
 
-bool Date::operator>(const Date& other) const { return other < *this; }
-bool Date::operator<=(const Date& other) const { return !(*this > other); }
-bool Date::operator>=(const Date& other) const { return !(*this < other); }
-
-bool Date::operator!=(const Date& other) const
-{
-	return day != other.day || month != other.month || year != other.year;
+void CDate::setToCurrentDate(){
+	time_t now;
+	struct tm datetime;
+	now = time(NULL);
+	localtime_s(&datetime, &now);
+//	datetime = *localtime(&now); // depricated in VS 2022
+	day = datetime.tm_mday;
+	month = datetime.tm_mon + 1;
+	year = datetime.tm_year + 1900;
 }
 
-Date Date::operator+(int days) const
-{
-	Date result = *this;
-
-	tm time = {};
-	time.tm_mday = result.day + days;
-	time.tm_mon = result.month - 1;
-	time.tm_year = result.year - 1900;
-
-	mktime(&time);
-
-	result.day = time.tm_mday;
-	result.month = time.tm_mon + 1;
-	result.year = time.tm_year + 1900;
-
-	return result;
+bool CDate::operator==(CDate date2){
+	if(day == date2.day && month == date2.month && year == date2.year)
+		return true;
+	else
+		return false;
+	//return (day == date2.day) && (month == date2.month) && (year == date2.year);
 }
+
+short int CDate::getDay(){return day;}
+short int CDate::getMonth(){return month;}
+short int CDate::getYear(){return year;}
