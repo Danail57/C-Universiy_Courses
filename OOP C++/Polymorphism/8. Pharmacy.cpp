@@ -199,7 +199,6 @@ int main()
 		cout << "4. Create array by manufacturer\n";
 		cout << "5. Medicines > 12lv price\n";
 		cout << "0. Exit\n";
-		//cin.ignore(numeric_limits<streamsize>::max(), '\n');
 		cin >> choice;
 
 		if (choice == 1)
