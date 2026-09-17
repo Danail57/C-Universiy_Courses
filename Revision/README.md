@@ -2,9 +2,11 @@
 Програмата трябва да преброи колко пъти се среща всяка една дума и да изведе резултата.
 
 Пример:
+
 Вход: apple banana apple orange banana apple
 
 Изход:
+
 apple: 3
 banana: 2
 orange: 1
