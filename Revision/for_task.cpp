@@ -17,7 +17,7 @@ unordered_map<string, int> count_words(vector<string> words_arr)
 	if (n == 0)
 	{
 		cout << "No words written" << endl;
-		return {};
+		return {}; // empty map returns
 	}
 
 	unordered_map<string, int> word_counts;
@@ -45,6 +45,7 @@ int main()
 	string input_line;
 	getline(cin, input_line);
 
+	// input using intervals between the words	
 	stringstream ss(input_line);
 	string word;
 	vector<string> words_arr;
