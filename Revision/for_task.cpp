@@ -17,7 +17,7 @@ unordered_map<string, int> count_words(vector<string> words_arr)
 	if (n == 0)
 	{
 		cout << "No words written" << endl;
-		return {}; // empty map returns
+		return {}; // returns empty map
 	}
 
 	unordered_map<string, int> word_counts;
